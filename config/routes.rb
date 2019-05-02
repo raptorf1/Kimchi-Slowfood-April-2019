@@ -1,5 +1,6 @@
 Rails.application.routes.draw do
 
   root controller: :products, action: :index
-  resources :about_us, only: [:index]
+  resources :products, only: [:index]
+  get "products/about_us"
 end
