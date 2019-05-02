@@ -1,13 +1,11 @@
 Given("I visit the landing page") do
-    visit root_path
-  end
+  visit root_path
+end
   
-  Then("I should see {string}") do |content|
+Then("I should see {string}") do |content|
   expect(page).to have_content content 
-  end
+end
   
-  Then("I click {string} link") do |link|
-    click_link link
-  end
-  
-  
+Then("I click {string} link") do |link|
+  click_link link
+end
