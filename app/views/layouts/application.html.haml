@@ -7,7 +7,7 @@
     = stylesheet_link_tag    'application', media: 'all', data: {'turbolinks-track' => 'reload'}
     = javascript_include_tag 'application', data: {'turbolinks-track' => 'reload'}
   %body
-    %p ABOUT US
+    = link_to "ABOUT US", about_us_index_path
     = link_to "MENU", root_path
-    
+
     = yield

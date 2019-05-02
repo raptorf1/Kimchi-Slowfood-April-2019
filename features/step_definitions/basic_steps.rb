@@ -6,11 +6,8 @@ Given("I visit the landing page") do
   expect(page).to have_content content 
   end
   
-  Then("I click {string} link") do |string|
-    pending # Write code here that turns the phrase above into concrete actions
+  Then("I click {string} link") do |link|
+    click_link link
   end
   
-  When("I click {string} link") do |string|
-    pending # Write code here that turns the phrase above into concrete actions
-  end
   
