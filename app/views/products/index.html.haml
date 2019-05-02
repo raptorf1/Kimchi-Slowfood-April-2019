@@ -1,2 +1,9 @@
 %p Opening hours
 %p Park location 
+
+= @products.each do |product|
+    %table
+        %tr
+            %th= product.name
+            %th= product.description
+            %th= product.price
