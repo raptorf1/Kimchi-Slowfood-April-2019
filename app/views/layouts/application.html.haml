@@ -6,8 +6,7 @@
     = csrf_meta_tags
     = stylesheet_link_tag    'application', media: 'all', data: {'turbolinks-track' => 'reload'}
     = javascript_include_tag 'application', data: {'turbolinks-track' => 'reload'}
+    %link(href="https://cdn.jsdelivr.net/npm/tailwindcss/dist/tailwind.min.css" rel="stylesheet")
   %body
-    = link_to "ABOUT US", about_us_index_path
-    = link_to "MENU", root_path
-
+    = render 'layouts/navigation'
     = yield
