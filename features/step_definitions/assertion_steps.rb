@@ -17,3 +17,10 @@ Then("I should see {string} for {string}") do |price, product|
     expect(page).to have_content price
   end
 end
+
+When("I click {string} link on {string}") do |element, product_name|
+  product = Product.find_by(name: product_name)
+  within("#product_#{product.id}") do
+    click_on element
+  end
+end

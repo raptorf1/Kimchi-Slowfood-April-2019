@@ -7,7 +7,3 @@ Given("the following products exists") do |table|
     FactoryBot.create(:product, product)
   end
 end
-
-When("I click {string} button") do |button_name|
-  click_on button_name
-end
