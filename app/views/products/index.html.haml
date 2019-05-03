@@ -2,8 +2,16 @@
 %p Park location 
 
 %table
-  = @products.each do |product|
+  %tr
+    %th Dish
+    %th Description
+    %th Price
+ 
+  - @products.each do |product|
     %tr
       %td= product.name
       %td= product.description
       %td= product.price
+
+%p For orders call:.....
+%p All prices listed are in Swedish Krona
