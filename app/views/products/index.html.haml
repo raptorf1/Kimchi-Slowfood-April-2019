@@ -1,2 +1,17 @@
 %p Opening hours
 %p Park location 
+
+%table
+  %tr
+    %th Dish
+    %th Description
+    %th Price
+ 
+  - @products.each do |product|
+    .div{id: dom_id(product)}
+      %tr
+        %td= product.name
+        %td= product.description
+        %td= "#{product.price} kr"
+
+%p For orders call:.....
