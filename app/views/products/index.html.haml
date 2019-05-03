@@ -8,10 +8,11 @@
     %th Price
  
   - @products.each do |product|
-    %tr
-      %td= product.name
-      %td= product.description
-      %td= product.price
+    .div{id: dom_id(product)}
+      %tr
+        %td= product.name
+        %td= product.description
+        %td= "#{product.price} kr"
 
 %p For orders call:.....
 %p All prices listed are in Swedish Krona

@@ -14,10 +14,7 @@ Feature: Visitor can view products
 
     Scenario:
         Then I should see "MENU"
-        And I should see "Pizza"
-        And I should see "Taco"
-        And I should see "Burger"
-        And I should see "120"
-        And I should see "150"
-        And I should see "175"
+        And I should see "120 kr" for "Pizza"
+        And I should see "150 kr" for "Taco"
+        And I should see "175 kr" for "Burger"
         
