@@ -8,6 +8,9 @@
     = javascript_include_tag 'application', data: {'turbolinks-track' => 'reload'}
     
   %body
+    #notifications
+      = alert 
+      = notice
     = render 'layouts/partials/navigation'
     .notice
       = notice
