@@ -10,8 +10,5 @@ Feature: Visitor can navigate the site
         And I should see "Opening hours"
         And I should see "Park location"
         When I click "ABOUT US" link
-        And I should see "THE KIMCHEN FOODTRUCK"
-        And I should see "MENU"
-        When I click "MENU" link
         Then I should be on the landing page
         
